@@ -21,7 +21,7 @@ def create(request):
             entry.URL = data['URL']
             entry.Price = data['Price']
             entry.Rating = data['Rating']
-            entry.Image = request.FILES['file']
+            entry.Image = request.FILES['Image']
             entry.save()
             cuisineList = data['Cuisine'].split()
             for cuisineentry in cuisineList:

@@ -39,7 +39,7 @@
    <div class="card-deck">
       {% for restaurant in restaurants %}
       <div class="card" style="width: 1rem;">
-         <img class="card-img-top" src={{restaurant.Image}} alt="Card image cap">
+         <img class="card-img-top" src= static {{restaurant.Image}} alt="Card image cap">
          <div class="card-body">
             <h5 class="card-title">{{restaurant.Name}}</h5>
             <a href={{restaurant.URL}} class="btn btn-red" target="_blank">Menu</a>
